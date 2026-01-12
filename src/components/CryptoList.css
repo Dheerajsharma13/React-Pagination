@@ -1,0 +1,9 @@
+ .crypto_list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 cards per row */
+    gap: 2rem;
+    padding: 2rem 4rem;
+    
+    
+     
+}
