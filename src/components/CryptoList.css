@@ -1,9 +1,42 @@
- .crypto_list {
+.crypto_list {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 cards per row */
     gap: 2rem;
     padding: 2rem 4rem;
-    
-    
-     
+}
+
+/* Large screens (1200px and above) */
+@media (max-width: 1200px) {
+    .crypto_list {
+        grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+        gap: 1.5rem;
+        padding: 2rem 3rem;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 768px) {
+    .crypto_list {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+        gap: 1.5rem;
+        padding: 2rem 2rem;
+    }
+}
+
+/* Small screens (576px to 767px) */
+@media (max-width: 576px) {
+    .crypto_list {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Extra small screens (below 576px) */
+@media (max-width: 480px) {
+    .crypto_list {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+        gap: 1rem;
+        padding: 1rem;
+    }
 }
